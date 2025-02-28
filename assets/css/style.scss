@@ -1,101 +1,101 @@
 ---
 ---
-$primary-color: #0077cc;
-$secondary-color: #333;
-$text-color: #444;
-$background-color: #f9f9f9;
-$font-stack: Arial, sans-serif;
+$primary-color: #61afef; // Teal-ish blue, common in code editors
+$secondary-color: #c678dd; // Purple-ish, for emphasis
+$text-color: #dcdfe4; // Light grey for readability
+$background-color: #282c34; // Dark grey, code editor-like background
+$font-stack: 'Roboto Mono', monospace; // A modern monospace font
 
 body {
-    font-family: $font-stack;
-    background-color: $background-color;
-    color: $text-color;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+  font-family: $font-stack;
+  background-color: $background-color;
+  color: $text-color;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    width: 80%;
-    max-width: 960px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #3b4252;  // Lighter dark grey for contrast
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 header {
-    text-align: center;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #434c5e;  // Slightly lighter border
 
-    h1 {
-        color: $primary-color;
-        margin-bottom: 0.5em;
-    }
+  h1 {
+    color: $primary-color;
+    margin-bottom: 0.5em;
+  }
 
-    .tagline {
-        font-style: italic;
-        color: $secondary-color;
-        margin-bottom: 1em;
-    }
+  .tagline {
+    font-style: italic;
+    color: $secondary-color;
+    margin-bottom: 1em;
+  }
 }
 
 section {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 
-    h2 {
-        color: $primary-color;
-        border-bottom: 1px solid #eee;
-        padding-bottom: 0.5em;
-        margin-bottom: 0.75em;
+  h2 {
+    color: $primary-color;
+    border-bottom: 1px solid #434c5e;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.75em;
+  }
+
+  ul {
+    list-style: square;
+    padding-left: 20px;
+  }
+
+  .experience-item {
+    margin-bottom: 15px;
+
+    h3 {
+      margin-bottom: 0.25em;
+      color: $secondary-color;
     }
 
-    ul {
-        list-style: square;
-        padding-left: 20px;
+    .company {
+      font-style: italic;
+      color: lighten($secondary-color, 20%);
+      margin-bottom: 0.5em;
     }
-
-    .experience-item {
-        margin-bottom: 15px;
-
-        h3 {
-            margin-bottom: 0.25em;
-            color: $secondary-color;
-        }
-
-        .company {
-            font-style: italic;
-            color: lighten($secondary-color, 20%);
-            margin-bottom: 0.5em;
-        }
-    }
+  }
 }
 
 .button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: $primary-color;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: $primary-color;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 
-    &:hover {
-        background-color: darken($primary-color, 10%);
-    }
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
 }
 
 footer {
-    text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid #eee;
-    color: lighten($text-color, 30%);
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #434c5e;
+  color: lighten($text-color, 30%);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .container {
-        width: 95%;
-        padding: 15px;
-    }
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
 }
